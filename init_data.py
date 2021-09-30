@@ -1,7 +1,7 @@
 import json
 import csv
 import pandas as pd
-outfile = open("review_stars.tsv", 'w')
+outfile = open("business.tsv", 'w')
 sfile = csv.writer(outfile, delimiter ="\t", quoting=csv.QUOTE_MINIMAL)
 sfile.writerow(['business_id','stars', 'text'])
 with open('yelp_academic_dataset_review.json', encoding="utf-8") as f:     
